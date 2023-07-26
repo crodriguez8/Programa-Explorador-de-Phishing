@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class PhishingExplorer {
     public static void main(String[] args) {
-        // Crear una lista de palabras y frases con su valor de puntos correspondiente
+        // Crea una lista de palabras y frases con su valor de puntos correspondiente
         HashMap<String, Integer> palabrasClave = new HashMap<>();
         palabrasClave.put("Banco", 3);
         palabrasClave.put("PayPal", 3);
@@ -38,7 +38,7 @@ public class PhishingExplorer {
         palabrasClave.put("Urgente", 2);
         palabrasClave.put("Dell", 2);
 
-        // Abrir el archivo de texto y buscar las palabras y frases de la lista
+        // Abre el archivo de texto y busca las palabras y frases de la lista
         try {
             File archivo = new File("lista.txt");
             Scanner scanner = new Scanner(archivo);
